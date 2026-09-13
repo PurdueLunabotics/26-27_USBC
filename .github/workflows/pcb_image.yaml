@@ -172,7 +172,7 @@ jobs:
       - name: Enforce Check Pass
         if: always()
         run: |
-          if [[ "${{ steps.run_erc.outcome }}" == "failure" || "${{ steps.run_drc.outcome }}" == "failure" ]]; then
+          if [ "${{ steps.run_erc.outcome }}" = "failure" ] || [ "${{ steps.run_drc.outcome }}" = "failure" ]; then
             echo "ERC or DRC failed! Blocking merge."
             exit 1
           else
