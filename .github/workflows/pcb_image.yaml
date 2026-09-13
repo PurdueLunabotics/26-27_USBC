@@ -1,0 +1,167 @@
+name: pcb_image
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+env:
+  PROJECT_NAME: onboarding-2627-V2
+
+jobs:
+  render-image:
+    name: render-image
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+    permissions:
+      contents: write # Required to push commits to the repo
+      pull-requests: write
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      # makes the files pcb.png -> pcb_old.png. For comparison of changes.
+      - name: Move previous images
+        run: |
+          cd images/ || exit 0
+
+          for file in *.png *.svg; do
+            # If no files match, the loop variable becomes the literal string '*.png'. 
+            # This check ensures the file actually exists before proceeding.
+            [ -e "$file" ] || continue
+
+            # Skip this iteration if the file is already an "_old" file
+            case "$file" in
+              *_old.png | *_old.svg) 
+                continue 
+                ;;
+            esac
+
+            # Rename the file, which safely overwrites any existing _old file
+            mv "$file" "${file%.*}_old.${file##*.}"
+          done
+        
+      - name: KiCad library setup
+        run: |
+          # 1. Initialize KiCad library configuration for the root user
+          mkdir -p ~/.config/kicad/10.0
+          cp /usr/share/kicad/template/sym-lib-table ~/.config/kicad/10.0/sym-lib-table
+          cp /usr/share/kicad/template/fp-lib-table ~/.config/kicad/10.0/fp-lib-table
+
+      - name: Run ERC
+        run: |
+          mkdir -p reports
+          echo ${{ env.PROJECT_NAME }}.kicad_sch
+          ls -la
+          kicad-cli sch erc --output reports/erc.rpt ${{ env.PROJECT_NAME }}.kicad_sch
+
+      - name: Run DRC (Errors Only)
+        run: |
+          # --severity-error ensures it ignores warnings
+          kicad-cli pcb drc --output reports/drc.rpt --severity-error ${{ env.PROJECT_NAME }}.kicad_pcb
+
+      - name: Export Schematic SVG
+        run: |
+          mkdir -p images
+          kicad-cli sch export svg --output images/ ${{ env.PROJECT_NAME }}.kicad_sch
+
+      - name: Export PCB Image
+        run: |
+          mkdir -p images
+          # --perspective ensures a 3D-like view if that's what you prefer
+          kicad-cli pcb export svg --layers F.Cu,B.Cu --output images/pcb.svg --check-zones --mode-single --fit-page-to-board ${{ env.PROJECT_NAME }}.kicad_pcb
+
+      - name: render pcb image
+        uses: linalinn/kicad-render@main
+        with:
+          pcb_file: ${{ env.PROJECT_NAME }}.kicad_pcb
+          output_path: ${{ github.workspace }}/images
+          background: transparent # Remove for no transparency
+
+      - name: Debug
+        if: always()
+        run: |
+          ls -la
+          ls images
+          ls reports
+
+      - name: Upload PCB Image Artifact
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: pcb-renders
+          path: |
+            ${{ github.workspace }}/images
+            ${{ github.workspace }}/reports
+          retention-days: 30
+
+      # 1. Push ONLY the images folder to a hidden, PR-specific asset branch
+      - name: Publish Renders to Asset Branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          # Creates a unique branch for this PR (e.g., pr-42-assets)
+          BRANCH: pr-${{ github.event.pull_request.number }}-assets
+          FOLDER: images # The folder we want to push
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Auto-generated PCB renders"
+
+      # 2. Build the comment and embed the URLs from the new branch
+      - name: Combine Reports and Images into Markdown
+        run: |
+          # Define the URL pointing to the new branch we just created.
+          BASE_URL="https://github.com/${{ github.repository }}/blob/pr-${{ github.event.pull_request.number }}-assets"
+          
+          # We attach the run_id to the end of the image URLs. 
+          # This forces GitHub to refresh the image on new pushes instead of showing a cached version.
+          CACHE_BUSTER="?raw=true&v=${{ github.run_id }}"
+          
+          echo "## PCB Validation Reports & Renders" > pr-message.md
+          
+          # Embed the images
+          echo "### Renders" >> pr-message.md
+          echo "![Top Layer]($BASE_URL/top.png$CACHE_BUSTER)" >> pr-message.md
+          echo "![Bottom Layer]($BASE_URL/bottom.png$CACHE_BUSTER)" >> pr-message.md
+          
+          # Loop through all SVG files in the images folder and embed them
+          for svg in images/*.svg; do
+            [ -e "$svg" ] || continue # Ensure the file exists in case no SVGs were generated
+            filename=$(basename "$svg")
+            name_no_ext=$(basename "$svg" .svg) # Extracts the name without the .svg extension
+            echo "![$name_no_ext]($BASE_URL/$filename$CACHE_BUSTER)" >> pr-message.md
+          done
+          
+          echo "---" >> pr-message.md
+          
+          # Embed the DRC Report
+          echo "<details><summary><b>Click to expand DRC Report</b></summary>" >> pr-message.md
+          echo "" >> pr-message.md
+          echo '```text' >> pr-message.md
+          cat reports/drc.rpt >> pr-message.md
+          echo '```' >> pr-message.md
+          echo "</details>" >> pr-message.md
+          
+          echo "" >> pr-message.md
+          
+          # Embed the ERC Report
+          echo "<details><summary><b>Click to expand ERC Report</b></summary>" >> pr-message.md
+          echo "" >> pr-message.md
+          echo '```text' >> pr-message.md
+          cat reports/erc.rpt >> pr-message.md
+          echo '```' >> pr-message.md
+          echo "</details>" >> pr-message.md
+
+      # 3. Post the comment to the PR thread
+      - name: Create or Update PR Comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: pcb-reports
+          path: pr-message.md
