@@ -57,16 +57,19 @@ jobs:
           cp /usr/share/kicad/template/fp-lib-table ~/.config/kicad/10.0/fp-lib-table
 
       - name: Run ERC
+        id: run_erc
+        continue-on-error: true
         run: |
           mkdir -p reports
           echo ${{ env.PROJECT_NAME }}.kicad_sch
           ls -la
-          kicad-cli sch erc --output reports/erc.rpt ${{ env.PROJECT_NAME }}.kicad_sch
+          kicad-cli sch erc --output reports/erc.rpt --exit-code-violations ${{ env.PROJECT_NAME }}.kicad_sch
 
       - name: Run DRC (Errors Only)
+        id: run_drc
+        continue-on-error: true
         run: |
-          # --severity-error ensures it ignores warnings
-          kicad-cli pcb drc --output reports/drc.rpt --severity-error ${{ env.PROJECT_NAME }}.kicad_pcb
+          kicad-cli pcb drc --output reports/drc.rpt --severity-error --exit-code-violations ${{ env.PROJECT_NAME }}.kicad_pcb
 
       - name: Export Schematic SVG
         run: |
@@ -165,3 +168,13 @@ jobs:
         with:
           header: pcb-reports
           path: pr-message.md
+
+      - name: Enforce Check Pass
+        if: always()
+        run: |
+          if [[ "${{ steps.run_erc.outcome }}" == "failure" || "${{ steps.run_drc.outcome }}" == "failure" ]]; then
+            echo "ERC or DRC failed! Blocking merge."
+            exit 1
+          else
+            echo "All checks passed."
+          fi
