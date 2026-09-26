@@ -1,4 +1,6 @@
 (sym_lib_table
 	(version 7)
+	(lib (name "USB_C_PD_IC") (type "KiCad") (uri "${KIPRJMOD}/KiCad/TPS25752ASRSMR.kicad_sym") (options "") (descr ""))
+	(lib (name "DX07S024JJ2R1300") (type "KiCad") (uri "${KIPRJMOD}/KiCad/DX07S024JJ2R1300.kicad_sym") (options "") (descr ""))
 	(lib (name "TPS25752ASRSMR") (type "KiCad") (uri "${KIPRJMOD}/KiCad/TPS25752ASRSMR.kicad_sym") (options "") (descr ""))
 )
