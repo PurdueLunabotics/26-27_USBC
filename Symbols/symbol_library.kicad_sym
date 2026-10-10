@@ -1720,36 +1720,62 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TPS25752A"
+	(symbol "TPS25752ASRSMR"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at 3.556 0.762 0)
+		(property "Reference" "IC"
+			(at 41.91 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "TPS25752ASRSMR"
+			(at 41.91 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "QFN40P400X400X100-33N-D"
+			(at 41.91 -82.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps25752a.pdf?ts=1785223982749&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS25752A"
+			(at 41.91 -182.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "USB Interface IC TPS25752A Source-only USB-C Power Delivery 3.2 controller"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
 			(hide yes)
 			(effects
 				(font
@@ -1757,8 +1783,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps25752a.pdf?ts=1787825434554"
-			(at 1.016 3.048 0)
+		(property "Height" "1"
+			(at 41.91 -382.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1766,10 +1792,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Description" ""
-			(at 9.906 6.604 0)
+		(property "Mouser Part Number" ""
+			(at 41.91 -482.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1777,12 +1804,60 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(symbol "TPS25752A_0_0"
-			(pin output line
-				(at -1.27 -12.7 0)
-				(length 2.54)
+		(property "Mouser Price/Stock" ""
+			(at 41.91 -582.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 41.91 -682.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TPS25752ASRSMR"
+			(at 41.91 -782.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(symbol "TPS25752ASRSMR_1_1"
+			(rectangle
+				(start 5.08 15.24)
+				(end 40.64 -35.56)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
 				(name "LDO_3V3"
 					(effects
 						(font
@@ -1798,9 +1873,9 @@
 					)
 				)
 			)
-			(pin input line
-				(at 31.75 -35.56 180)
-				(length 2.54)
+			(pin passive line
+				(at 0 -2.54 0)
+				(length 5.08)
 				(name "ADCIN1"
 					(effects
 						(font
@@ -1816,9 +1891,9 @@
 					)
 				)
 			)
-			(pin input line
-				(at 31.75 -33.02 180)
-				(length 2.54)
+			(pin passive line
+				(at 0 -5.08 0)
+				(length 5.08)
 				(name "ADCIN2"
 					(effects
 						(font
@@ -1834,9 +1909,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at -1.27 -15.24 0)
-				(length 2.54)
+			(pin passive line
+				(at 0 -7.62 0)
+				(length 5.08)
 				(name "LDO_1V5"
 					(effects
 						(font
@@ -1852,9 +1927,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -25.4 180)
-				(length 2.54)
+			(pin passive line
+				(at 0 -10.16 0)
+				(length 5.08)
 				(name "GPIO0/LD1"
 					(effects
 						(font
@@ -1870,10 +1945,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -22.86 180)
-				(length 2.54)
-				(name "GPOI1"
+			(pin passive line
+				(at 0 -12.7 0)
+				(length 5.08)
+				(name "GPIO1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1888,9 +1963,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -20.32 180)
-				(length 2.54)
+			(pin passive line
+				(at 0 -15.24 0)
+				(length 5.08)
 				(name "GPIO2/LD2"
 					(effects
 						(font
@@ -1906,10 +1981,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -2.54 180)
-				(length 2.54)
-				(name "I2Ct_SDA"
+			(pin passive line
+				(at 0 -17.78 0)
+				(length 5.08)
+				(name "I2CT_SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1924,10 +1999,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at 31.75 -5.08 180)
-				(length 2.54)
-				(name "L2Ct_SCL"
+			(pin passive line
+				(at 12.7 -40.64 90)
+				(length 5.08)
+				(name "I2CT_SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1942,10 +2017,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -1.27 -27.94 0)
-				(length 2.54)
-				(name "I2Ct_IRQ"
+			(pin passive line
+				(at 15.24 -40.64 90)
+				(length 5.08)
+				(name "~{I2CT_IRQ}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1960,17 +2035,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -27.94 180)
-				(length 2.54)
-				(name "GND"
+			(pin passive line
+				(at 17.78 -40.64 90)
+				(length 5.08)
+				(name "GND_1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11,12,14"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1978,9 +2053,27 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -1.27 -22.86 0)
-				(length 2.54)
+			(pin passive line
+				(at 20.32 -40.64 90)
+				(length 5.08)
+				(name "GND_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -40.64 90)
+				(length 5.08)
 				(name "GPIO11"
 					(effects
 						(font
@@ -1996,10 +2089,28 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -1.27 -20.32 0)
-				(length 2.54)
-				(name "I2Cc_SDA"
+			(pin passive line
+				(at 25.4 -40.64 90)
+				(length 5.08)
+				(name "GND_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 -40.64 90)
+				(length 5.08)
+				(name "I2CC_SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2014,10 +2125,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -1.27 -25.4 0)
-				(length 2.54)
-				(name "I2Cc_SCL"
+			(pin passive line
+				(at 30.48 -40.64 90)
+				(length 5.08)
+				(name "I2CC_SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2032,10 +2143,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -1.27 -17.78 0)
-				(length 2.54)
-				(name "I2Cc_IRQ"
+			(pin passive line
+				(at 45.72 -17.78 180)
+				(length 5.08)
+				(name "~{I2CC_IRQ}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2050,9 +2161,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -17.78 180)
-				(length 2.54)
+			(pin passive line
+				(at 45.72 -15.24 180)
+				(length 5.08)
 				(name "GPIO3"
 					(effects
 						(font
@@ -2068,9 +2179,9 @@
 					)
 				)
 			)
-			(pin input line
-				(at -1.27 -7.62 0)
-				(length 2.54)
+			(pin passive line
+				(at 45.72 -12.7 180)
+				(length 5.08)
 				(name "VSYS"
 					(effects
 						(font
@@ -2086,9 +2197,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at -1.27 -30.48 0)
-				(length 2.54)
+			(pin passive line
+				(at 45.72 -10.16 180)
+				(length 5.08)
 				(name "GATE_VSYS"
 					(effects
 						(font
@@ -2104,9 +2215,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at 31.75 -30.48 180)
-				(length 2.54)
+			(pin passive line
+				(at 45.72 -7.62 180)
+				(length 5.08)
 				(name "GATE_VBUS"
 					(effects
 						(font
@@ -2122,9 +2233,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -15.24 180)
-				(length 2.54)
+			(pin passive line
+				(at 45.72 -5.08 180)
+				(length 5.08)
 				(name "GPIO4/USB_P"
 					(effects
 						(font
@@ -2140,9 +2251,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -12.7 180)
-				(length 2.54)
+			(pin passive line
+				(at 45.72 -2.54 180)
+				(length 5.08)
 				(name "GPIO5/USB_N"
 					(effects
 						(font
@@ -2158,9 +2269,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -1.27 -35.56 0)
-				(length 2.54)
+			(pin passive line
+				(at 45.72 0 180)
+				(length 5.08)
 				(name "CC1"
 					(effects
 						(font
@@ -2176,9 +2287,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -1.27 -33.02 0)
-				(length 2.54)
+			(pin passive line
+				(at 33.02 20.32 270)
+				(length 5.08)
 				(name "CC2"
 					(effects
 						(font
@@ -2194,35 +2305,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -1.27 -5.08 0)
-				(length 2.54)
-				(name "VBUS"
+			(pin passive line
+				(at 30.48 20.32 270)
+				(length 5.08)
+				(name "VBUS_1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "26,27"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -1.27 -10.16 0)
-				(length 2.54)
-				(name "PP5V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "28,29"
+				(number "26"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2230,9 +2323,63 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -7.62 180)
-				(length 2.54)
+			(pin passive line
+				(at 27.94 20.32 270)
+				(length 5.08)
+				(name "VBUS_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 20.32 270)
+				(length 5.08)
+				(name "PP5V_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 20.32 270)
+				(length 5.08)
+				(name "PP5V_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 20.32 20.32 270)
+				(length 5.08)
 				(name "GPIO7"
 					(effects
 						(font
@@ -2248,9 +2395,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 31.75 -10.16 180)
-				(length 2.54)
+			(pin passive line
+				(at 17.78 20.32 270)
+				(length 5.08)
 				(name "GPIO6"
 					(effects
 						(font
@@ -2266,9 +2413,9 @@
 					)
 				)
 			)
-			(pin input line
-				(at -1.27 -2.54 0)
-				(length 2.54)
+			(pin passive line
+				(at 15.24 20.32 270)
+				(length 5.08)
 				(name "VIN_3V3"
 					(effects
 						(font
@@ -2284,17 +2431,22 @@
 					)
 				)
 			)
-		)
-		(symbol "TPS25752A_1_1"
-			(rectangle
-				(start 1.27 -1.27)
-				(end 29.21 -36.83)
-				(stroke
-					(width 0)
-					(type solid)
+			(pin passive line
+				(at 12.7 20.32 270)
+				(length 5.08)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
-				(fill
-					(type background)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
