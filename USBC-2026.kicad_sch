@@ -3750,6 +3750,12 @@
 		(uuid "4b0aa6fc-d0aa-485c-8b57-a3b1b081bf40")
 	)
 	(junction
+		(at 168.91 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f4d3b1a-09a7-4076-a9d4-fc7e63346bb5")
+	)
+	(junction
 		(at 93.98 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3965,6 +3971,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 76.2) (xy 170.18 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26de9973-f163-4e43-af9e-202347c3032f")
+	)
+	(wire
+		(pts
 			(xy 24.13 184.15) (xy 26.67 184.15)
 		)
 		(stroke
@@ -4145,7 +4161,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 76.2) (xy 170.18 76.2)
+			(xy 167.64 76.2) (xy 168.91 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4485,6 +4501,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 73.66) (xy 168.91 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c02948d8-794f-40d0-8d7c-a9536a0db11a")
+	)
+	(wire
+		(pts
 			(xy 46.99 179.07) (xy 48.26 179.07)
 		)
 		(stroke
@@ -4615,7 +4641,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 63.5) (xy 173.99 76.2)
+			(xy 173.99 73.66) (xy 173.99 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4672,6 +4698,16 @@
 			(type default)
 		)
 		(uuid "ed55cb59-abad-4d02-bbb1-5d220b77e104")
+	)
+	(wire
+		(pts
+			(xy 177.8 73.66) (xy 177.8 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed61b5eb-e874-46b8-bf91-8fb4e7cd1820")
 	)
 	(wire
 		(pts
@@ -4957,6 +4993,30 @@
 	)
 	(global_label "Vbus"
 		(shape input)
+		(at 173.99 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "700de067-0a1c-4688-80d7-a851294037ba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 66.2601 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Vbus"
+		(shape input)
 		(at 24.13 184.15 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5029,7 +5089,7 @@
 	)
 	(global_label "CC2"
 		(shape input)
-		(at 177.8 76.2 90)
+		(at 177.8 73.66 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5039,7 +5099,7 @@
 		)
 		(uuid "aff16d3c-9a5f-4f2b-a6fa-6ab049cc1c3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.8 69.4653 90)
+			(at 177.8 66.9253 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5077,7 +5137,7 @@
 	)
 	(global_label "PP5V"
 		(shape input)
-		(at 168.91 76.2 90)
+		(at 168.91 73.66 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5087,7 +5147,7 @@
 		)
 		(uuid "c9baf817-4e5b-4f80-863f-b693f03b3054")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.91 68.3767 90)
+			(at 168.91 65.8367 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
