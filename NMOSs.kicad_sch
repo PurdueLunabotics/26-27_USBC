@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "66b3d925-8b6f-4963-840d-7dd7bb2e8cbe")
+	(uuid "09ef9d6e-8d1c-4b0c-ae73-1ad1c872808f")
 	(paper "A4")
 	(lib_symbols
 		(symbol "power:GND"
@@ -1487,7 +1487,7 @@
 	)
 	(global_label "DR1L"
 		(shape input)
-		(at 108.0557 59.6459 0)
+		(at 172.72 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1497,7 +1497,7 @@
 		)
 		(uuid "2611d9ac-ed1c-4143-9c7a-4e79b8f9712e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.8185 59.6459 0)
+			(at 180.4828 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1511,7 +1511,7 @@
 	)
 	(global_label "BBSource"
 		(shape input)
-		(at 11.5357 86.3159 180)
+		(at 76.2 120.65 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1521,7 +1521,7 @@
 		)
 		(uuid "3ab6ce0a-164f-4665-99eb-ccd5364e4fe2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -0.4604 86.3159 0)
+			(at 64.2039 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1535,7 +1535,7 @@
 	)
 	(global_label "DR1H"
 		(shape input)
-		(at 11.5357 59.6459 180)
+		(at 76.2 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1545,7 +1545,7 @@
 		)
 		(uuid "5fe8ffdd-eff3-4704-8b35-5c7b43dd78dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 3.4705 59.6459 0)
+			(at 68.1348 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1559,7 +1559,7 @@
 	)
 	(global_label "BBSource"
 		(shape input)
-		(at 11.5357 24.0859 180)
+		(at 76.2 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1569,7 +1569,7 @@
 		)
 		(uuid "82d5155a-b603-45f7-8625-a7576cdbe78f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -0.4604 24.0859 0)
+			(at 64.2039 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1583,7 +1583,7 @@
 	)
 	(global_label "BBVin"
 		(shape input)
-		(at 108.0557 24.0859 0)
+		(at 172.72 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1593,7 +1593,7 @@
 		)
 		(uuid "9f58a19d-0f78-4498-b1d8-74f0abd988e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.4233 24.0859 0)
+			(at 181.0876 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1607,7 +1607,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 108.0557 86.3159 0)
+		(at 172.72 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1618,7 +1618,7 @@
 		(fields_autoplaced yes)
 		(uuid "8bfb30ac-0fca-4e86-a849-0c79f362aa66")
 		(property "Reference" "#PWR"
-			(at 108.0557 92.6659 0)
+			(at 172.72 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1629,7 +1629,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 108.0557 91.3959 0)
+			(at 172.72 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1639,7 +1639,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 108.0557 86.3159 0)
+			(at 172.72 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1650,7 +1650,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 108.0557 86.3159 0)
+			(at 172.72 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1661,7 +1661,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 108.0557 86.3159 0)
+			(at 172.72 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1685,7 +1685,7 @@
 	)
 	(symbol
 		(lib_id "symbol_library:SSM6N44FE_LM")
-		(at 11.5357 24.0859 0)
+		(at 76.2 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1696,7 +1696,7 @@
 		(fields_autoplaced yes)
 		(uuid "c4d4df47-03a1-40e6-a8a7-ec29315f2476")
 		(property "Reference" "MOSFET"
-			(at 59.7957 1.2259 0)
+			(at 124.46 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1706,7 +1706,7 @@
 			)
 		)
 		(property "Value" "SSM6N44FE_LM"
-			(at 59.7957 3.7659 0)
+			(at 124.46 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1716,7 +1716,7 @@
 			)
 		)
 		(property "Footprint" "ES6_TOS"
-			(at 11.5357 24.0859 0)
+			(at 76.2 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1728,7 +1728,7 @@
 			)
 		)
 		(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=366&prodName=SSM6N44FE"
-			(at 11.5357 24.0859 0)
+			(at 76.2 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1740,7 +1740,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 11.5357 24.0859 0)
+			(at 76.2 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
