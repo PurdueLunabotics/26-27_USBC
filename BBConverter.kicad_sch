@@ -3120,7 +3120,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50c88983-209b-4062-ad68-196a62669afc")
-		(property "Reference" "L"
+		(property "Reference" "L2"
 			(at 187.96 62.2299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3246,6 +3246,10 @@
 		(instances
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "L2")
+					(unit 1)
+				)
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "L2")
 					(unit 1)
 				)
