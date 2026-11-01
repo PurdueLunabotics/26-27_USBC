@@ -1617,7 +1617,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bfb30ac-0fca-4e86-a849-0c79f362aa66")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR032"
 			(at 172.72 127 0)
 			(hide yes)
 			(show_name no)
@@ -1676,7 +1676,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/8947820e-e8e1-4e6c-b817-6cf34999c384"
 					(reference "#PWR032")
 					(unit 1)
 				)
@@ -1695,7 +1695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4d4df47-03a1-40e6-a8a7-ec29315f2476")
-		(property "Reference" "MOSFET"
+		(property "Reference" "MOSFET1"
 			(at 124.46 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1770,7 +1770,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/8947820e-e8e1-4e6c-b817-6cf34999c384"
 					(reference "MOSFET1")
 					(unit 1)
 				)

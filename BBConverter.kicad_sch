@@ -160,184 +160,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -771,6 +593,335 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "symbol_library:IHLP5050EZER4R7M5A"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 16.51 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "IHLP5050EZER4R7M5A"
+				(at 16.51 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "INDPM135129X500N"
+				(at 16.51 -96.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/34507/ihlp-5050ez-5a.pdf"
+				(at 16.51 -196.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "4.7 H Shielded Molded Inductor 15.3 A 10.1mOhm Max Nonstandard"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "5"
+				(at 16.51 -396.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 16.51 -496.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 16.51 -596.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Vishay"
+				(at 16.51 -696.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "IHLP5050EZER4R7M5A"
+				(at 16.51 -796.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "IHLP5050EZER4R7M5A_1_1"
+				(arc
+					(start 5.08 0)
+					(mid 6.35 1.219)
+					(end 7.62 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 0)
+					(mid 8.89 1.219)
+					(end 10.16 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 10.16 0)
+					(mid 11.43 1.219)
+					(end 12.7 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 12.7 0)
+					(mid 13.97 1.219)
+					(end 15.24 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1400,7 +1551,7 @@
 	)
 	(text "***Logic low if internal fault.*** >"
 		(exclude_from_sim no)
-		(at 95.25 172.72 90)
+		(at 148.336 115.57 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1425,6 +1576,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "110466b4-f1de-4284-87d7-58d6f0409b5e")
+	)
+	(junction
+		(at 109.22 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29b228f2-293d-47f3-ace6-a1c747684a08")
 	)
 	(junction
 		(at 95.25 91.44)
@@ -1481,12 +1638,6 @@
 		(uuid "66966532-6ce0-4e21-a7a4-6c82fcf31b28")
 	)
 	(junction
-		(at 186.69 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "844bdcc3-7aec-4146-83d7-417d8bd4cf76")
-	)
-	(junction
 		(at 102.87 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1523,6 +1674,12 @@
 		(uuid "c324980f-d76e-4074-be11-9d435e672719")
 	)
 	(junction
+		(at 186.69 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c76eee1b-bd4e-4411-b30c-2bf9add63a07")
+	)
+	(junction
 		(at 186.69 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1539,6 +1696,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc56ef31-c9a0-47d0-9fcb-3a7cea33ff99")
+	)
+	(no_connect
+		(at 118.11 73.66)
+		(uuid "030b3a6a-789f-4495-96cd-8e43573f7e2b")
+	)
+	(no_connect
+		(at 158.75 71.12)
+		(uuid "aa2fc634-ed7e-479c-9388-ad014a55aff1")
+	)
+	(no_connect
+		(at 158.75 96.52)
+		(uuid "ac4c7060-107c-4595-b73e-655ca9c17fe4")
+	)
+	(no_connect
+		(at 158.75 78.74)
+		(uuid "db00ac39-5ff1-4c2c-9261-83e9b6a33a41")
+	)
+	(no_connect
+		(at 158.75 66.04)
+		(uuid "e71e0acc-82a0-4d8a-9871-11fb30f4eab4")
 	)
 	(wire
 		(pts
@@ -1582,7 +1759,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 91.44) (xy 68.58 91.44)
+			(xy 63.5 91.44) (xy 68.58 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1612,7 +1789,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 66.04) (xy 167.64 68.58)
+			(xy 167.64 53.34) (xy 167.64 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1662,6 +1839,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 91.44) (xy 118.11 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e0665f7-12c0-48bf-a5ea-bc119fc26993")
+	)
+	(wire
+		(pts
 			(xy 186.69 86.36) (xy 195.58 86.36)
 		)
 		(stroke
@@ -1702,7 +1889,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 66.04) (xy 186.69 66.04)
+			(xy 167.64 53.34) (xy 186.69 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1892,7 +2079,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 91.44) (xy 118.11 91.44)
+			(xy 102.87 91.44) (xy 109.22 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2080,7 +2267,7 @@
 	)
 	(global_label "Vbus"
 		(shape input)
-		(at 66.04 91.44 180)
+		(at 63.5 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2090,7 +2277,7 @@
 		)
 		(uuid "9db9ada7-8f1a-4b46-8acd-327b91e803f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.6401 91.44 0)
+			(at 56.1001 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2210,7 +2397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "023e6df8-9a3b-467c-8fe2-c032bfe68dbe")
-		(property "Reference" "R"
+		(property "Reference" "R7"
 			(at 168.91 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2232,7 +2419,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal"
 			(at 165.354 105.156 90)
 			(hide yes)
 			(show_name no)
@@ -2273,7 +2460,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "R7")
 					(unit 1)
 				)
@@ -2292,7 +2479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02e9cbed-e51e-4bb0-97b5-4115a79d4fdd")
-		(property "Reference" "R"
+		(property "Reference" "R2"
 			(at 163.83 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2314,7 +2501,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal"
 			(at 160.274 97.536 90)
 			(hide yes)
 			(show_name no)
@@ -2355,7 +2542,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "R2")
 					(unit 1)
 				)
@@ -2374,7 +2561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08c2e29e-03f3-4cbe-8d69-927e5b0d0a8a")
-		(property "Reference" "C"
+		(property "Reference" "C19"
 			(at 60.96 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2396,7 +2583,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 58.1152 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -2437,7 +2624,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C19")
 					(unit 1)
 				)
@@ -2456,7 +2643,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "243639b8-f7cd-4f52-9f83-2c6bd242905f")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR023"
 			(at 166.37 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2515,7 +2702,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR023")
 					(unit 1)
 				)
@@ -2534,7 +2721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35944951-133e-4367-913d-724abd2be506")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR030"
 			(at 173.99 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2593,7 +2780,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR030")
 					(unit 1)
 				)
@@ -2612,7 +2799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38182fd7-4dec-4be9-bfb5-c4b99e55a6b8")
-		(property "Reference" "C"
+		(property "Reference" "C17"
 			(at 76.2 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2634,7 +2821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 73.3552 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -2675,7 +2862,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C17")
 					(unit 1)
 				)
@@ -2694,7 +2881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38f471fe-1e0b-4476-a33a-bd156a0e4ddb")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR06"
 			(at 57.15 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2754,7 +2941,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR06")
 					(unit 1)
 				)
@@ -2773,7 +2960,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46e09c59-a925-402a-be77-3b49eee475fe")
-		(property "Reference" "R"
+		(property "Reference" "R10"
 			(at 198.12 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2795,7 +2982,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal"
 			(at 194.564 89.916 90)
 			(hide yes)
 			(show_name no)
@@ -2836,7 +3023,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "R10")
 					(unit 1)
 				)
@@ -2855,7 +3042,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dbc4fc8-d4f9-477d-aa43-2f965646734f")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR031"
 			(at 195.58 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -2914,8 +3101,152 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "symbol_library:IHLP5050EZER4R7M5A")
+		(at 186.69 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50c88983-209b-4062-ad68-196a62669afc")
+		(property "Reference" "L"
+			(at 187.96 62.2299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "IHLP5050EZER4R7M5A"
+			(at 187.96 64.7699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "INDPM135129X500N"
+			(at 282.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/34507/ihlp-5050ez-5a.pdf"
+			(at 382.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "4.7 H Shielded Molded Inductor 15.3 A 10.1mOhm Max Nonstandard"
+			(at 186.69 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "5"
+			(at 582.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 682.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 782.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 882.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IHLP5050EZER4R7M5A"
+			(at 982.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "2"
+			(uuid "885333e0-66ff-4145-bb08-7205cc8e3716")
+		)
+		(pin "1"
+			(uuid "e43fa820-f93f-4ef1-86fd-95811643e861")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -2933,7 +3264,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5267b129-02c2-44af-8e02-2a6631213eb5")
-		(property "Reference" "C"
+		(property "Reference" "C16"
 			(at 82.55 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2955,7 +3286,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 79.7052 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2996,7 +3327,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C16")
 					(unit 1)
 				)
@@ -3015,7 +3346,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "539985ca-e002-4f49-a200-ffb5f4194bf3")
-		(property "Reference" "C"
+		(property "Reference" "C8"
 			(at 91.44 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3035,7 +3366,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 87.63 82.2452 0)
 			(hide yes)
 			(show_name no)
@@ -3076,7 +3407,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C8")
 					(unit 1)
 				)
@@ -3095,7 +3426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58d01e9a-12e6-4311-bca3-210b1d6072f1")
-		(property "Reference" "C"
+		(property "Reference" "C14"
 			(at 99.06 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3117,7 +3448,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.2152 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -3158,7 +3489,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C14")
 					(unit 1)
 				)
@@ -3177,7 +3508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67ab28c9-e5fb-4fd6-af52-f485f0f7a630")
-		(property "Reference" "R"
+		(property "Reference" "R1"
 			(at 72.39 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3197,7 +3528,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal"
 			(at 72.644 90.424 90)
 			(hide yes)
 			(show_name no)
@@ -3238,7 +3569,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "R1")
 					(unit 1)
 				)
@@ -3257,7 +3588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e556ad5-9dad-401e-8e22-8a9300162a2a")
-		(property "Reference" "C"
+		(property "Reference" "C15"
 			(at 90.17 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3279,7 +3610,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 87.3252 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -3320,7 +3651,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C15")
 					(unit 1)
 				)
@@ -3339,7 +3670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "751b0b16-660d-4711-a645-ef297d3d8bcb")
-		(property "Reference" "R"
+		(property "Reference" "R8"
 			(at 176.53 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3361,7 +3692,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal"
 			(at 172.974 96.266 90)
 			(hide yes)
 			(show_name no)
@@ -3402,7 +3733,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "R8")
 					(unit 1)
 				)
@@ -3421,7 +3752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76ecae5d-efeb-4d53-85b1-f7784ea95a2e")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR024"
 			(at 180.34 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3480,7 +3811,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR024")
 					(unit 1)
 				)
@@ -3499,7 +3830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a01320eb-e5ec-4c65-a2cc-8bacf408f7cc")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR011"
 			(at 87.63 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3558,7 +3889,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR011")
 					(unit 1)
 				)
@@ -3577,7 +3908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a779232b-8106-4a9d-8332-93a7e864c10f")
-		(property "Reference" "C"
+		(property "Reference" "C5"
 			(at 106.68 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3599,7 +3930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 103.8352 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -3640,7 +3971,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C5")
 					(unit 1)
 				)
@@ -3659,7 +3990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a85aef54-0839-4853-b09a-f7ac6597c921")
-		(property "Reference" "C"
+		(property "Reference" "C3"
 			(at 177.8 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3679,7 +4010,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 181.61 75.2348 0)
 			(hide yes)
 			(show_name no)
@@ -3720,7 +4051,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C3")
 					(unit 1)
 				)
@@ -3739,7 +4070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad33ff1e-9fe7-488f-9e8d-c7913e8fdb5d")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR07"
 			(at 80.01 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3798,7 +4129,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR07")
 					(unit 1)
 				)
@@ -3817,7 +4148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1b6402b-9d97-4147-b213-137488135a3b")
-		(property "Reference" "C"
+		(property "Reference" "C18"
 			(at 67.31 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3839,7 +4170,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 64.4652 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -3880,7 +4211,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C18")
 					(unit 1)
 				)
@@ -3899,7 +4230,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2dad0ff-f572-4717-8cdd-a4e858c38003")
-		(property "Reference" "C"
+		(property "Reference" "C7"
 			(at 172.72 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3919,7 +4250,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 176.53 82.8548 0)
 			(hide yes)
 			(show_name no)
@@ -3960,7 +4291,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C7")
 					(unit 1)
 				)
@@ -3968,8 +4299,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 186.69 69.85 0)
+		(lib_id "power:PWR_FLAG")
+		(at 109.22 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3978,31 +4309,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b9301b54-cb25-471e-86dd-864d9d41e9f1")
-		(property "Reference" "IHLP5050EZER4R7M5A"
-			(at 187.96 68.5799 0)
+		(uuid "c7b32b95-5c1c-42ea-b0e0-dd7872895661")
+		(property "Reference" "#FLG05"
+			(at 109.22 89.535 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
-			(at 187.96 71.1199 0)
+		(property "Value" "PWR_FLAG"
+			(at 109.22 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 69.85 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4013,7 +4343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 69.85 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4023,8 +4353,8 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
-			(at 186.69 69.85 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4035,15 +4365,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "628a9c57-7e19-49a0-b892-33bd23f71b5e")
-		)
-		(pin "2"
-			(uuid "41bd311b-645c-4fb9-876c-a0c5197a9faa")
+			(uuid "c238fd39-dd6f-4c64-83bc-7c79589794c7")
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
-					(reference "IHLP5050EZER4R7M5A")
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -4061,7 +4388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2c937a3-2e1b-482d-a158-e01d73aa4d26")
-		(property "Reference" "C"
+		(property "Reference" "C20"
 			(at 190.5 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4083,7 +4410,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 185.7248 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -4124,7 +4451,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C20")
 					(unit 1)
 				)
@@ -4143,7 +4470,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4f18d14-e4ee-48ca-8067-2b5f6948b574")
-		(property "Reference" "C"
+		(property "Reference" "C6"
 			(at 83.82 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4165,7 +4492,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 80.9752 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -4206,7 +4533,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C6")
 					(unit 1)
 				)
@@ -4225,7 +4552,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db3e7e39-53f5-447d-9041-0df61dae9ef8")
-		(property "Reference" "C"
+		(property "Reference" "C4"
 			(at 163.83 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4245,7 +4572,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 167.64 80.3148 0)
 			(hide yes)
 			(show_name no)
@@ -4286,7 +4613,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C4")
 					(unit 1)
 				)
@@ -4305,7 +4632,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e46bf558-7fdb-4aca-99ea-1c0e623f03ea")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR012"
 			(at 93.98 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -4364,7 +4691,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR012")
 					(unit 1)
 				)
@@ -4383,7 +4710,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8faaeb3-4b4e-4d89-9856-ee9956052bef")
-		(property "Reference" "U"
+		(property "Reference" "U1"
 			(at 138.43 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4518,7 +4845,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "U1")
 					(unit 1)
 				)
@@ -4537,7 +4864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fae8b95a-ffe6-4fa6-a8f5-8d9d1ab27821")
-		(property "Reference" "R"
+		(property "Reference" "R3"
 			(at 104.14 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4557,7 +4884,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal"
 			(at 103.886 84.836 90)
 			(hide yes)
 			(show_name no)
@@ -4598,7 +4925,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "R3")
 					(unit 1)
 				)
@@ -4617,7 +4944,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbe79d86-0cdc-4500-b6fc-968305782554")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR05"
 			(at 110.49 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -4677,7 +5004,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR05")
 					(unit 1)
 				)
@@ -4696,7 +5023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd3b8c82-8fdb-4579-b642-71bec171ac94")
-		(property "Reference" "C"
+		(property "Reference" "C21"
 			(at 199.39 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4718,7 +5045,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 194.6148 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4759,7 +5086,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "C21")
 					(unit 1)
 				)
@@ -4778,7 +5105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd855eee-db8e-4087-ab1b-618e62213a6f")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR010"
 			(at 161.29 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4837,7 +5164,7 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "#PWR010")
 					(unit 1)
 				)
