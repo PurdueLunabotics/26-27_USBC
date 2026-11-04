@@ -3142,7 +3142,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "INDPM135129X500N"
+		(property "Footprint" "Library:L_Vishay_IHLP-5050-smaller-pad-width"
 			(at 282.88 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -3245,10 +3245,6 @@
 		)
 		(instances
 			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
-					(reference "L2")
-					(unit 1)
-				)
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33/52f22f47-37b6-4643-9b98-056227df3b6a"
 					(reference "L2")
 					(unit 1)
@@ -4734,7 +4730,7 @@
 				)
 			)
 		)
-		(property "Footprint" "VQFN-HR26_RPM_TEX"
+		(property "Footprint" "Library:VQFN-HR26_RPM_TEX"
 			(at 118.11 66.04 0)
 			(hide yes)
 			(show_name no)

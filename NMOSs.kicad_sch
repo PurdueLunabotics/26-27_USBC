@@ -1715,7 +1715,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ES6_TOS"
+		(property "Footprint" "Library:SSM6N44FE_LM"
 			(at 76.2 58.42 0)
 			(hide yes)
 			(show_name no)
