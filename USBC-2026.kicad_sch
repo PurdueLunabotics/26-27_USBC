@@ -3204,16 +3204,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "< ***Possibly type to Vcc to protect mem?***"
-		(exclude_from_sim no)
-		(at 123.19 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "02d57ef3-4304-4149-849b-1d5b0d351748")
-	)
 	(text "< ***Should this be tied to GND/High?***"
 		(exclude_from_sim no)
 		(at 208.28 71.12 0)
@@ -3387,10 +3377,6 @@
 	(no_connect
 		(at 224.79 93.98)
 		(uuid "13511b44-3818-42b0-a855-b7eba6ec1951")
-	)
-	(no_connect
-		(at 157.48 31.75)
-		(uuid "157058d7-68aa-4d47-b6d8-3bbdc7f9a62d")
 	)
 	(no_connect
 		(at 275.59 91.44)
@@ -3861,6 +3847,16 @@
 			(type default)
 		)
 		(uuid "6bb00b1f-5e7e-47ba-a2d0-2ccd29c7b724")
+	)
+	(wire
+		(pts
+			(xy 157.48 29.21) (xy 157.48 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e15714c-9a7b-4941-bdc0-301d6b2c1641")
 	)
 	(wire
 		(pts
@@ -7438,6 +7434,84 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 29.21 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f999d49-d389-4544-90af-ddda1f585a89")
+		(property "Reference" "#PWR027"
+			(at 157.48 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b35f3a0-1a1a-4662-b253-079917600fb2")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
