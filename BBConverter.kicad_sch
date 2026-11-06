@@ -2056,6 +2056,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "**** LOOK for foot print/model for other MOSFET****\n"
+		(exclude_from_sim no)
+		(at 132.08 18.796 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "254ef8e4-c9bf-41f0-ab4f-0b5132adc37b")
+	)
 	(text "***Logic low if internal fault.*** >"
 		(exclude_from_sim no)
 		(at 148.336 115.57 90)
