@@ -1704,10 +1704,6 @@
 		(uuid "fc56ef31-c9a0-47d0-9fcb-3a7cea33ff99")
 	)
 	(no_connect
-		(at 158.75 71.12)
-		(uuid "aa2fc634-ed7e-479c-9388-ad014a55aff1")
-	)
-	(no_connect
 		(at 158.75 96.52)
 		(uuid "ac4c7060-107c-4595-b73e-655ca9c17fe4")
 	)
@@ -2270,6 +2266,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "BBSource"
+		(shape input)
+		(at 158.75 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0fb786d3-b154-49f2-862e-a104d723737f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.7461 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
