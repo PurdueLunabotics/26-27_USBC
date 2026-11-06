@@ -1179,6 +1179,400 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "symbol_library:4471"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -10.16 13.462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "4471"
+				(at -10.16 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "4471:MODULE_4471"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/4471_Adafruit_Industries_LLC.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Description" "MCP2221A USB to GPIO Interface Qwiic, STEMMA QT Platform Evaluation Expansion Board"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/4471_Adafruit_Industries_LLC.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Adafruit Industries LLC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "4.77mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MPN" "4471"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "PARTREV" "2026-05-14"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SOURCE_URL" "https://www.snapeda.com/parts/4471/Adafruit+Industries/view-part/"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "UNIT" "mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "4471_0_0"
+				(rectangle
+					(start -10.16 -15.24)
+					(end 10.16 12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "RX"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP1_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "TX"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP1_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "GP3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP1_3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "GP2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP1_4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "GP1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP1_5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "GP0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP1_6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 10.16 180)
+					(length 5.08)
+					(name "5V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP2_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP2_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP2_3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 5.08 0)
+					(length 5.08)
+					(name "~{RST}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP2_4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -15.24 -7.62 0)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP2_5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -10.16 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "JP2_6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "symbol_library:AT24C512C-SHM-B"
 			(pin_names
 				(offset 0.254)
@@ -1464,465 +1858,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "symbol_library:B8B-XH-A"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at -2.54 13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "B8B-XH-A"
-				(at -2.54 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "B8B-XH-A:JST_B8B-XH-A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/B8B-XH-A_JST.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Description" "Connector Header Through Hole 8 position 0.098\" (2.50mm)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/B8B-XH-A_JST.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "JST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "7.00 mm"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MPN" "B8B-XH-A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "PARTREV" "7/4/21"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SOURCE_URL" "https://www.snapeda.com/parts/B8B-XH-A/JST/view-part/"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "B8B-XH-A_0_0"
-				(polyline
-					(pts
-						(xy -3.81 11.43) (xy -3.81 -8.89)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 11.43) (xy -2.54 12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -8.89) (xy -2.54 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -3.175 9.8425)
-					(end -1.5875 10.4775)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -3.175 7.3025)
-					(end -1.5875 7.9375)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -3.175 4.7625)
-					(end -1.5875 5.3975)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -3.175 2.2225)
-					(end -1.5875 2.8575)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -3.175 -0.3175)
-					(end -1.5875 0.3175)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -3.175 -2.8575)
-					(end -1.5875 -2.2225)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -3.175 -5.3975)
-					(end -1.5875 -4.7625)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -3.175 -7.9375)
-					(end -1.5875 -7.3025)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -10.16) (xy 3.81 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 12.7) (xy -2.54 12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -10.16) (xy 3.81 12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -7.62 10.16 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 7.62 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -5.08 0)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -7.62 0)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
 							)
 						)
 					)
@@ -4180,16 +4115,6 @@
 		)
 		(uuid "107a778c-8385-4818-8705-3412ae8a5fdc")
 	)
-	(text "JST Connector\n"
-		(exclude_from_sim no)
-		(at -0.508 6.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "834a4a15-244f-47ff-ac73-2dee7b4281a4")
-	)
 	(text "< ***Should this be tied to GND/High?***"
 		(exclude_from_sim no)
 		(at 208.28 71.12 0)
@@ -4219,10 +4144,10 @@
 		(uuid "11297246-9014-41e8-bead-52d6b4963d98")
 	)
 	(junction
-		(at 26.67 36.83)
+		(at 29.21 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "13497b90-f9e7-4af2-aa05-28c2908189be")
+		(uuid "1c71b708-9a5e-40b0-a6e7-5f1f3a1c87fe")
 	)
 	(junction
 		(at 55.88 180.34)
@@ -4297,6 +4222,12 @@
 		(uuid "466a77ce-a72f-4687-99a4-f4d9b720dc03")
 	)
 	(junction
+		(at 29.21 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e96ff2e-2cf8-4104-96cd-21214015bab6")
+	)
+	(junction
 		(at 93.98 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4313,6 +4244,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f4d3b1a-09a7-4076-a9d4-fc7e63346bb5")
+	)
+	(junction
+		(at 224.79 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73d5a89d-6e24-4934-9dcd-1931c081c3f9")
+	)
+	(junction
+		(at 29.21 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77b09e20-3df8-49bf-aa7b-6358d50a5f94")
 	)
 	(junction
 		(at 157.48 92.71)
@@ -4447,24 +4390,44 @@
 		(uuid "f888f123-9ec5-4b92-a33d-18cfb89a196d")
 	)
 	(no_connect
+		(at 64.77 125.73)
+		(uuid "0c50ae63-b17f-4b95-a427-66b6ec1fa66b")
+	)
+	(no_connect
 		(at 275.59 114.3)
 		(uuid "0eab737b-8982-4dc9-9ab5-b343dd1691e4")
+	)
+	(no_connect
+		(at 34.29 123.19)
+		(uuid "123ca221-6942-48ce-9f8f-f4303eef1f05")
 	)
 	(no_connect
 		(at 224.79 93.98)
 		(uuid "13511b44-3818-42b0-a855-b7eba6ec1951")
 	)
 	(no_connect
+		(at 64.77 120.65)
+		(uuid "26d69212-fc42-4ec7-9fe0-e9d89fc5f920")
+	)
+	(no_connect
+		(at 34.29 120.65)
+		(uuid "2b20d84b-1225-460e-b161-036b22850acd")
+	)
+	(no_connect
 		(at 275.59 91.44)
 		(uuid "2fb0cc11-8141-44d2-86d6-3550306cb8ca")
 	)
 	(no_connect
-		(at 6.35 19.05)
-		(uuid "33e50f4f-3ce7-4284-87f7-cb330ad60bb2")
-	)
-	(no_connect
 		(at 275.59 99.06)
 		(uuid "7363ae9b-4aeb-4ed7-9d8c-8e407f0ff667")
+	)
+	(no_connect
+		(at 34.29 118.11)
+		(uuid "86664d22-5cc0-48be-bb09-9f35ffd818e5")
+	)
+	(no_connect
+		(at 34.29 115.57)
+		(uuid "8c121fac-650a-4a49-9753-6d5155f7b870")
 	)
 	(no_connect
 		(at 275.59 93.98)
@@ -4473,6 +4436,10 @@
 	(no_connect
 		(at 224.79 111.76)
 		(uuid "9eb3208c-dc3f-4adb-9faa-f08c255cbd8f")
+	)
+	(no_connect
+		(at 64.77 118.11)
+		(uuid "a146e2e6-3e84-4043-bce7-7e11e8b56274")
 	)
 	(no_connect
 		(at 224.79 91.44)
@@ -4485,6 +4452,10 @@
 	(no_connect
 		(at 275.59 111.76)
 		(uuid "d0d41ba9-28d1-424c-91e4-426d2e7cd151")
+	)
+	(no_connect
+		(at 34.29 130.81)
+		(uuid "d89a22b8-f313-44bb-851a-b4e3ef122343")
 	)
 	(no_connect
 		(at 224.79 114.3)
@@ -4502,13 +4473,13 @@
 	)
 	(wire
 		(pts
-			(xy 6.35 21.59) (xy 21.59 21.59)
+			(xy 29.21 29.21) (xy 29.21 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0255a0de-2f82-4e0b-b6e9-9fd30926b4a9")
+		(uuid "019dfdee-87ea-4b35-ba91-e9a55674f15a")
 	)
 	(wire
 		(pts
@@ -4562,6 +4533,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 34.29) (xy 29.21 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "095ea5e5-9058-4fa9-bed3-1b31b723100c")
+	)
+	(wire
+		(pts
 			(xy 93.98 67.31) (xy 93.98 74.93)
 		)
 		(stroke
@@ -4582,16 +4563,6 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 34.29) (xy 6.35 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dd22dd2-9301-4fd3-a66b-ea67e454e25d")
-	)
-	(wire
-		(pts
 			(xy 196.85 34.29) (xy 203.2 34.29)
 		)
 		(stroke
@@ -4599,16 +4570,6 @@
 			(type default)
 		)
 		(uuid "0ea877a4-fd3d-44ec-8b99-ceab324df888")
-	)
-	(wire
-		(pts
-			(xy 24.13 29.21) (xy 24.13 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f048706-5cc8-41e2-983b-05fa34a9af52")
 	)
 	(wire
 		(pts
@@ -4649,16 +4610,6 @@
 			(type default)
 		)
 		(uuid "14b173b4-5738-4b4e-9696-f829603cadc3")
-	)
-	(wire
-		(pts
-			(xy 27.94 30.48) (xy 27.94 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14ed9305-ae6e-428b-9ff3-ee429ad4aa6e")
 	)
 	(wire
 		(pts
@@ -4732,16 +4683,6 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 29.21) (xy 25.4 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22a88b15-0673-46a2-aa62-e11982783334")
-	)
-	(wire
-		(pts
 			(xy 173.99 31.75) (xy 175.26 31.75)
 		)
 		(stroke
@@ -4749,16 +4690,6 @@
 			(type default)
 		)
 		(uuid "23a8e0e6-11db-4c5b-b28b-33d280a837b1")
-	)
-	(wire
-		(pts
-			(xy 26.67 36.83) (xy 29.21 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23e49a24-19b0-4d4f-9815-4370ab5b1341")
 	)
 	(wire
 		(pts
@@ -4872,16 +4803,6 @@
 	)
 	(wire
 		(pts
-			(xy 6.35 16.51) (xy 21.59 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "417e8fc4-b1f8-4be2-bf3e-43fb576b9c9d")
-	)
-	(wire
-		(pts
 			(xy 87.63 45.72) (xy 87.63 48.26)
 		)
 		(stroke
@@ -4889,6 +4810,16 @@
 			(type default)
 		)
 		(uuid "42b07f29-e67a-464c-80cf-5002566ce22f")
+	)
+	(wire
+		(pts
+			(xy 26.67 36.83) (xy 29.21 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4303ada7-ad50-4142-803d-4a5d784d3614")
 	)
 	(wire
 		(pts
@@ -4922,16 +4853,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 34.29) (xy 29.21 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48b39512-6264-4c7c-a66b-bbef8b7514ec")
-	)
-	(wire
-		(pts
 			(xy 168.91 20.32) (xy 168.91 31.75)
 		)
 		(stroke
@@ -4959,16 +4880,6 @@
 			(type default)
 		)
 		(uuid "52687d03-7d86-4ed6-8bc6-030b3b61357e")
-	)
-	(wire
-		(pts
-			(xy 6.35 24.13) (xy 21.59 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a75f2dc-b12a-4bbf-afed-00781c6c4e32")
 	)
 	(wire
 		(pts
@@ -5052,6 +4963,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 85.09) (xy 224.79 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "684d7080-9cec-4b5f-b5b3-41a1488e60a0")
+	)
+	(wire
+		(pts
 			(xy 91.44 63.5) (xy 91.44 67.31)
 		)
 		(stroke
@@ -5092,16 +5013,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 29.21) (xy 85.09 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dabef09-098d-4508-a496-b281e0ca676a")
-	)
-	(wire
-		(pts
 			(xy 157.48 29.21) (xy 157.48 31.75)
 		)
 		(stroke
@@ -5122,7 +5033,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 83.82) (xy 224.79 88.9)
+			(xy 224.79 83.82) (xy 224.79 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5262,16 +5173,6 @@
 	)
 	(wire
 		(pts
-			(xy 6.35 31.75) (xy 29.21 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c052e36-91dd-4e71-862e-95f34383ed67")
-	)
-	(wire
-		(pts
 			(xy 180.34 146.05) (xy 180.34 143.51)
 		)
 		(stroke
@@ -5302,6 +5203,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 31.75) (xy 29.21 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94637fac-1b43-4804-a6a8-c1c049341157")
+	)
+	(wire
+		(pts
 			(xy 203.2 43.18) (xy 209.55 43.18)
 		)
 		(stroke
@@ -5319,16 +5230,6 @@
 			(type default)
 		)
 		(uuid "9a97832d-9400-45ca-a1ec-21defac09845")
-	)
-	(wire
-		(pts
-			(xy 6.35 29.21) (xy 24.13 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9addaa5c-2947-420b-938b-b8b9fb260c0c")
 	)
 	(wire
 		(pts
@@ -5369,16 +5270,6 @@
 			(type default)
 		)
 		(uuid "a34d8602-eeb3-4e62-90c9-c4574a9f5beb")
-	)
-	(wire
-		(pts
-			(xy 24.13 30.48) (xy 27.94 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5922e8d-94e8-4f36-8812-ed35c26c8ac8")
 	)
 	(wire
 		(pts
@@ -5469,16 +5360,6 @@
 			(type default)
 		)
 		(uuid "c3a85aa5-276f-4e5f-8fb9-b007bd2f23f0")
-	)
-	(wire
-		(pts
-			(xy 26.67 36.83) (xy 26.67 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c40d3b66-d78d-4d19-8061-2c8ba96e2267")
 	)
 	(wire
 		(pts
@@ -5599,16 +5480,6 @@
 			(type default)
 		)
 		(uuid "d5d38711-8b70-4e2f-aa9c-e881d164906e")
-	)
-	(wire
-		(pts
-			(xy 26.67 26.67) (xy 6.35 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7b816b1-f5e9-4d47-8fe8-f2b9f1a56366")
 	)
 	(wire
 		(pts
@@ -5802,16 +5673,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 29.21) (xy 25.4 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f36dc564-84a4-4bf1-b870-7bf4deb64282")
-	)
-	(wire
-		(pts
 			(xy 144.78 64.77) (xy 144.78 67.31)
 		)
 		(stroke
@@ -5956,30 +5817,6 @@
 			)
 		)
 	)
-	(global_label "CC_SDA"
-		(shape input)
-		(at 21.59 24.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "13a7dfd5-4afd-4d61-a826-ba09b7d22f5b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 31.6509 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "Gate_Vbus"
 		(shape input)
 		(at 81.28 177.8 270)
@@ -6001,30 +5838,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "LDO_3V3"
-		(shape input)
-		(at 21.59 16.51 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1e7c7e63-b4b4-459b-b8ba-d1cac9343358")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 32.679 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -6100,30 +5913,6 @@
 			)
 		)
 	)
-	(global_label "CC_SLC"
-		(shape input)
-		(at 21.59 21.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2994ec37-564b-45fa-9a7f-eec4eccf3b3c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 31.5904 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "D_N"
 		(shape input)
 		(at 190.5 54.61 0)
@@ -6174,7 +5963,7 @@
 	)
 	(global_label "LDO_3V3"
 		(shape input)
-		(at 88.9 29.21 0)
+		(at 85.09 29.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6184,7 +5973,7 @@
 		)
 		(uuid "3de51ce9-1d69-47bf-9970-4d9f7729bb4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.989 29.21 0)
+			(at 96.179 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6556,6 +6345,30 @@
 			)
 		)
 	)
+	(global_label "CC_SDA"
+		(shape input)
+		(at 64.77 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c1100e4-82e1-418c-9ffa-99f8c2723197")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.8309 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "ADCIN1"
 		(shape input)
 		(at 144.78 54.61 180)
@@ -6700,6 +6513,30 @@
 			)
 		)
 	)
+	(global_label "LDO_3V3"
+		(shape input)
+		(at 34.29 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3f303ca-0a0d-45f8-9061-2a3da0e76bec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.201 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "D_P"
 		(shape input)
 		(at 275.59 104.14 0)
@@ -6793,6 +6630,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "CC_SLC"
+		(shape input)
+		(at 64.77 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f6fffb70-c8d1-496b-9c95-cd8c7e6becdd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.7704 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -7267,6 +7128,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 224.79 85.09 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f801c77-c28a-43b1-a98a-542178e10176")
+		(property "Reference" "#FLG09"
+			(at 222.885 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 220.98 85.0899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 224.79 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05999810-2ff9-43e6-aaf8-70c610554889")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "#FLG09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 143.51 148.59 0)
 		(unit 1)
@@ -7339,6 +7279,215 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "symbol_library:4471")
+		(at 49.53 120.65 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23194218-630b-4e23-965c-6db00a4bc95f")
+		(property "Reference" "U4"
+			(at 49.53 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4471"
+			(at 49.53 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:MODULE_4471"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/4471_Adafruit_Industries_LLC.pdf"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description" "MCP2221A USB to GPIO Interface Qwiic, STEMMA QT Platform Evaluation Expansion Board"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/4471_Adafruit_Industries_LLC.pdf"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Adafruit Industries LLC"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "4.77mm"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MPN" "4471"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "2026-05-14"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCE_URL" "https://www.snapeda.com/parts/4471/Adafruit+Industries/view-part/"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "UNIT" "mm"
+			(at 49.53 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "JP1_1"
+			(uuid "64bae570-7039-4434-9ac3-e85b8319228d")
+		)
+		(pin "JP1_2"
+			(uuid "7da37716-6d0f-458f-aff9-8649cd540269")
+		)
+		(pin "JP1_3"
+			(uuid "3b32cc1d-a858-4aae-958f-46ed6d5b02db")
+		)
+		(pin "JP2_5"
+			(uuid "37901008-4248-40a5-89db-fcc3baa5c988")
+		)
+		(pin "JP2_6"
+			(uuid "5de4ab65-e3fd-49de-9ecb-8e056cce691f")
+		)
+		(pin "JP2_4"
+			(uuid "0f74e87f-216b-4528-8d47-289be985870d")
+		)
+		(pin "JP2_2"
+			(uuid "a0f42e1d-3721-49a1-acc9-84db81bce65d")
+		)
+		(pin "JP2_1"
+			(uuid "33b20313-5377-4dcf-a9bb-109ab4d31979")
+		)
+		(pin "JP1_6"
+			(uuid "c00485f4-fd85-47de-ab76-4a77a9c0df76")
+		)
+		(pin "JP1_5"
+			(uuid "e6a12d47-2db2-4872-a717-18213e4e40d9")
+		)
+		(pin "JP1_4"
+			(uuid "8ba2635e-7719-4f8c-8426-f71239950f27")
+		)
+		(pin "JP2_3"
+			(uuid "8a44e978-bb2f-46d6-9403-f22f8ccec6dc")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7753,84 +7902,6 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 26.67 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37e3e931-7bea-4127-9f04-42c6ef8cd09c")
-		(property "Reference" "#PWR025"
-			(at 26.67 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 26.67 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8a496e4d-8b65-4880-a135-bf38fe86d82b")
-		)
-		(instances
-			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -11169,191 +11240,6 @@
 		)
 	)
 	(symbol
-		(lib_id "symbol_library:B8B-XH-A")
-		(at -1.27 24.13 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cbfbf3b3-95d2-441e-a156-aadf59ea7c6c")
-		(property "Reference" "J1"
-			(at -1.27 8.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B8B-XH-A"
-			(at -1.27 11.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:JST_B8B-XH-A"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/B8B-XH-A_JST.pdf"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Description" "Connector Header Through Hole 8 position 0.098\" (2.50mm)"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/B8B-XH-A_JST.pdf"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "JST"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "7.00 mm"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MPN" "B8B-XH-A"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "7/4/21"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SOURCE_URL" "https://www.snapeda.com/parts/B8B-XH-A/JST/view-part/"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at -1.27 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "1"
-			(uuid "81be0273-1920-44bb-9278-9cb8ea3b27b9")
-		)
-		(pin "2"
-			(uuid "112211fb-c686-4302-80ae-6dfc10021a2f")
-		)
-		(pin "3"
-			(uuid "d74b22d1-21de-4db9-b201-cb8b63ef0fe8")
-		)
-		(pin "4"
-			(uuid "88059f12-825e-48d8-a1ec-b5cf5bfc2417")
-		)
-		(pin "5"
-			(uuid "a4ad33bd-09b5-4e84-9aee-a22ea8a8f5e5")
-		)
-		(pin "6"
-			(uuid "0953182e-b1a3-4fd5-97b2-dfb2c2d18618")
-		)
-		(pin "7"
-			(uuid "e331034e-1bf6-4e68-9bfe-5eae9802c7a1")
-		)
-		(pin "8"
-			(uuid "a4e73050-75df-45f2-9e26-899b83514504")
-		)
-		(instances
-			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "symbol_library:TPS25752ASRSMR")
 		(at 144.78 52.07 0)
 		(unit 1)
@@ -11589,6 +11475,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 34.29 107.95 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cde520b5-5c5d-45fb-8df5-f53de0d0a651")
+		(property "Reference" "#PWR049"
+			(at 27.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 107.9499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97087e26-ae5a-4ea7-a58c-79ab61432314")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 168.91 20.32 0)
 		(unit 1)
@@ -11743,6 +11708,84 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 26.67 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d80a987b-4696-4932-bd15-1e9ba3e1dbdf")
+		(property "Reference" "#PWR050"
+			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67be3eed-0bd1-46a3-95cc-f2f5134ee46d")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)

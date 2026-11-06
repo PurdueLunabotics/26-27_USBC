@@ -749,7 +749,7 @@
         "uuid": "0c056c42-d02c-4bee-adc4-fcbb18375f33"
       }
     ],
-    "used_designators": "#FLG1-9,#PWR1-34,#PWR45-48,C1-21,C24-31,IC1,J1-2,L1-2,MOSFET1,P1,Q1-6,R1-11,U1-3",
+    "used_designators": "#FLG1-9,#PWR1-34,#PWR45-50,C1-21,C24-31,IC1,J1-2,L1-2,MOSFET1,P1,Q1-6,R1-12,U1-4",
     "variants": []
   },
   "sheets": [
