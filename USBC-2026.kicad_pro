@@ -649,6 +649,48 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SOURCE_URL",
+          "name": "SOURCE_URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DATASHEET_URL",
+          "name": "DATASHEET_URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -707,17 +749,13 @@
         "uuid": "0c056c42-d02c-4bee-adc4-fcbb18375f33"
       }
     ],
-    "used_designators": "#FLG1-9,#PWR1-34,#PWR45-47,C1-21,C24-30,IC1,J1-2,L1-2,MOSFET1,P1,Q1-2,R1-11,U1-3",
+    "used_designators": "#FLG1-9,#PWR1-34,#PWR45-48,C1-21,C24-31,IC1,J1-2,L1-2,MOSFET1,P1,Q1-6,R1-11,U1-3",
     "variants": []
   },
   "sheets": [
     [
       "0c056c42-d02c-4bee-adc4-fcbb18375f33",
       "USBC-2026"
-    ],
-    [
-      "8947820e-e8e1-4e6c-b817-6cf34999c384",
-      "NMOSs"
     ],
     [
       "52f22f47-37b6-4643-9b98-056227df3b6a",
