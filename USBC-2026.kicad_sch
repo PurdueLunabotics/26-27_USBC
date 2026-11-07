@@ -532,7 +532,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Q_NMOS_DGS_1"
+		(symbol "Transistor_FET:Q_NMOS_DGS"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -542,24 +542,26 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q1"
-				(at 8.89 0 90)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "Q_NMOS_DGS"
-				(at 6.35 0 90)
+				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -606,7 +608,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_DGS_1_0_1"
+			(symbol "Q_NMOS_DGS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -773,11 +775,11 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_DGS_1_1_1"
+			(symbol "Q_NMOS_DGS_1_1"
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "S"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -813,8 +815,7 @@
 				(pin passive line
 					(at 2.54 -5.08 90)
 					(length 2.54)
-					(hide yes)
-					(name "S2"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -822,119 +823,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4238,12 +4126,6 @@
 		(uuid "d2c7d23a-0dc2-42c5-ad4c-716669b3d28c")
 	)
 	(junction
-		(at 101.6 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3397e4a-f10c-4f20-a879-984234f87ec8")
-	)
-	(junction
 		(at 173.99 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5198,16 +5080,6 @@
 			(type default)
 		)
 		(uuid "aafedb1c-3a46-4792-8ee6-f12c95e8ac24")
-	)
-	(wire
-		(pts
-			(xy 101.6 172.72) (xy 101.6 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad32551e-a3a7-4a84-8a86-cd4391abf0bd")
 	)
 	(wire
 		(pts
@@ -7128,6 +7000,88 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_NMOS_DGS")
+		(at 96.52 172.72 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1bc554f2-8084-4157-9c12-52ded472b960")
+		(property "Reference" "Q4"
+			(at 96.52 163.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPD90N04S4L04"
+			(at 96.52 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 93.98 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/gate/source"
+			(at 96.52 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbd97431-d0bb-4ecd-915d-c4e26b914531")
+		)
+		(pin "2"
+			(uuid "19e03f52-9a54-42a8-b0a1-c28953b3db43")
+		)
+		(pin "3"
+			(uuid "8aa0f4b7-271a-4d90-966c-0362f031d60b")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -9078,6 +9032,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:Q_NMOS_DGS")
+		(at 81.28 172.72 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "65430b25-8b5d-4681-b3b3-94563a39e20b")
+		(property "Reference" "Q3"
+			(at 81.28 163.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPD90N04S4L04"
+			(at 81.28 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 83.82 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/gate/source"
+			(at 81.28 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2708765-5cd4-49cd-9b90-cc6e918b50e1")
+		)
+		(pin "2"
+			(uuid "40583b22-2054-45e4-a670-e087e423282a")
+		)
+		(pin "3"
+			(uuid "788bbb5c-a8f8-4d54-a7a7-9292cf69d052")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 163.83 144.78 0)
 		(unit 1)
@@ -9704,108 +9741,6 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Q_NMOS_DGS_1")
-		(lib_id "Transistor_FET:Q_NMOS_DGS")
-		(at 81.28 172.72 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "989cd9c3-eaf4-4cbc-b6c4-0e265a6ad946")
-		(property "Reference" "Q1"
-			(at 81.28 163.83 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q_NMOS_DGS"
-			(at 81.28 166.37 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 78.74 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 81.28 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "e5d299fb-a642-467a-9a6d-be8db374a1f4")
-		)
-		(pin "2"
-			(uuid "52aec95e-fa95-4ea1-b3bf-10a60670e4b6")
-		)
-		(pin "1"
-			(uuid "2e0a352f-6a76-4511-b19a-8675775b2c49")
-		)
-		(pin "4"
-			(uuid "7eb0e2e7-1e2e-488a-bd1a-f9cf585b6d42")
-		)
-		(pin "5"
-			(uuid "02cf1037-7f62-4614-baf6-6e7bf046ca22")
-		)
-		(pin "6"
-			(uuid "60ebf374-ad35-4e1c-9cdb-f00c0644c76e")
-		)
-		(pin "8"
-			(uuid "7ed1c4c2-6ee3-45dd-b553-799716485baa")
-		)
-		(pin "7"
-			(uuid "ead3fbcf-f861-4a02-a5e9-ee822950d57b")
-		)
-		(pin "9"
-			(uuid "9e8806e5-697c-4eb6-a3ec-e16b05c61b8c")
-		)
-		(instances
-			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -12421,108 +12356,6 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Q_NMOS_DGS_1")
-		(lib_id "Transistor_FET:Q_NMOS_DGS")
-		(at 96.52 172.72 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f30fb914-5ab7-4eda-9e05-fdf99b1439a7")
-		(property "Reference" "Q2"
-			(at 96.52 163.83 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q_NMOS_DGS"
-			(at 96.52 166.37 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 93.98 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 96.52 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "91ea4c19-7516-4c70-b755-a16037d22d39")
-		)
-		(pin "2"
-			(uuid "57bad7c3-1b60-4543-9744-1529c87ba50e")
-		)
-		(pin "1"
-			(uuid "60531222-89eb-4d44-b4dc-9d8491b456d6")
-		)
-		(pin "4"
-			(uuid "4b15661d-bd56-4f67-ae52-0a1487b5d9a7")
-		)
-		(pin "5"
-			(uuid "3db15fe1-6a82-4238-9273-4b23389df6f7")
-		)
-		(pin "6"
-			(uuid "8249d1e4-7a6f-4d96-8579-75166d2a2ba5")
-		)
-		(pin "8"
-			(uuid "9c52e07c-e41f-49cc-92d7-91f2cefe4660")
-		)
-		(pin "7"
-			(uuid "c62063a6-cede-4637-8c06-e4d9597bdaeb")
-		)
-		(pin "9"
-			(uuid "ca4120dd-2d8c-49a6-a088-89dca2431ea4")
-		)
-		(instances
-			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
