@@ -730,6 +730,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -749,7 +757,7 @@
         "uuid": "0c056c42-d02c-4bee-adc4-fcbb18375f33"
       }
     ],
-    "used_designators": "#FLG1-9,#PWR1-34,#PWR45-50,C1-21,C24-31,IC1,J1-2,L1-2,MOSFET1,P1,Q1-6,R1-12,U1-4",
+    "used_designators": "#FLG1-11,#PWR1-34,#PWR45-50,C1-21,C24-31,IC1,J1-2,L1-2,MOSFET1,P1,Q1-6,R1-12,U1-4",
     "variants": []
   },
   "sheets": [
