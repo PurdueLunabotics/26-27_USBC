@@ -3901,16 +3901,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "**** LOOK for foot print/model for other MOSFET****\n"
-		(exclude_from_sim no)
-		(at 87.884 160.782 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "107a778c-8385-4818-8705-3412ae8a5fdc")
-	)
 	(text "< ***Should this be tied to GND/High?***"
 		(exclude_from_sim no)
 		(at 208.28 71.12 0)
@@ -4210,6 +4200,10 @@
 	(no_connect
 		(at 275.59 99.06)
 		(uuid "7363ae9b-4aeb-4ed7-9d8c-8e407f0ff667")
+	)
+	(no_connect
+		(at 34.29 128.27)
+		(uuid "75964430-003d-47a7-b197-eddfa097a62c")
 	)
 	(no_connect
 		(at 34.29 118.11)
@@ -6310,30 +6304,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "LDO_3V3"
-		(shape input)
-		(at 34.29 128.27 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e3f303ca-0a0d-45f8-9061-2a3da0e76bec")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.201 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
