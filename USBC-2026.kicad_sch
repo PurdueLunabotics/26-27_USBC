@@ -4432,8 +4432,8 @@
 		(uuid "f9d99a42-42da-413c-8d73-9230c11aa18d")
 	)
 	(no_connect
-		(at 274.32 91.44)
-		(uuid "fb66f240-7483-41eb-87e0-d64c5ed7e62c")
+		(at 275.59 91.44)
+		(uuid "fd19406e-193b-43be-a101-1342a806fba2")
 	)
 	(wire
 		(pts
@@ -5104,16 +5104,6 @@
 			(type default)
 		)
 		(uuid "71c3200a-964b-48a6-bb84-a6d75ae33825")
-	)
-	(wire
-		(pts
-			(xy 285.75 -10.16) (xy 290.83 -10.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77cdf16f-801f-4920-988b-1ef5f6ab75d4")
 	)
 	(wire
 		(pts
