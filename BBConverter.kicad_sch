@@ -2624,7 +2624,7 @@
 	)
 	(global_label "DR1L"
 		(shape input)
-		(at 152.4 36.83 0)
+		(at 144.78 31.75 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2634,7 +2634,7 @@
 		)
 		(uuid "4971bdcc-994f-4aff-b799-291219be3911")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 160.1628 36.83 0)
+			(at 144.78 23.9872 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2648,7 +2648,7 @@
 	)
 	(global_label "DR1H"
 		(shape input)
-		(at 125.73 36.83 0)
+		(at 118.11 31.75 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2656,9 +2656,9 @@
 			)
 			(justify left)
 		)
-		(uuid "6a532055-4ca6-4e03-a90a-90379d897ceb")
+		(uuid "6bc8a6d9-7990-43a5-b329-3fdc3db4c942")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.7952 36.83 0)
+			(at 118.11 23.6848 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2840,7 +2840,7 @@
 	)
 	(global_label "BBSource"
 		(shape input)
-		(at 144.78 31.75 0)
+		(at 152.4 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2850,7 +2850,7 @@
 		)
 		(uuid "f3c862a3-8a23-4093-92af-7408fec4c430")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.7761 31.75 0)
+			(at 164.3961 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4532,7 +4532,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 118.11 31.75 0)
+		(at 125.73 36.83 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4543,7 +4543,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a414a18-b75e-4985-a46f-0778a7803cac")
 		(property "Reference" "#PWR025"
-			(at 118.11 35.56 0)
+			(at 121.92 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4554,17 +4554,18 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 118.11 26.67 0)
+			(at 129.54 36.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 31.75 0)
+			(at 125.73 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4575,7 +4576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 31.75 0)
+			(at 125.73 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4586,7 +4587,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 118.11 31.75 0)
+			(at 125.73 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
