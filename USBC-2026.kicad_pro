@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.1,
-          "min_island_area": 10.0,
+          "min_island_area": 0.0013161349,
           "min_thickness": 0.25,
           "pad_connection": 2,
           "remove_islands": 0,
@@ -546,7 +546,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -723,7 +723,7 @@
         "uuid": "0c056c42-d02c-4bee-adc4-fcbb18375f33"
       }
     ],
-    "used_designators": "R1-11,#FLG1-9,#FLG12,IC1-3,J1-3,MOSFET1,#PWR1-47,#PWR51,L1-2,C1-31,P1,Q1-2,U1-2,H1-2",
+    "used_designators": "R1-11,#FLG1-9,#FLG12,IC1-3,J1-3,MOSFET1,#PWR1-47,#PWR51-54,L1-2,C1-31,P1,Q1-2,U1-2,H1-2,TP1-6",
     "variants": []
   },
   "sheets": [
