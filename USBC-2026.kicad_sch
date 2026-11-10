@@ -188,7 +188,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x03_Socket"
+		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -208,8 +208,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03_Socket"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -240,7 +240,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated"
+			(property "Description" "Generic connector, single row, 01x04, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -283,7 +283,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x03_Socket_1_1"
+			(symbol "Conn_01x04_Socket_1_1"
 				(polyline
 					(pts
 						(xy -1.27 2.54) (xy -0.508 2.54)
@@ -311,6 +311,18 @@
 				(polyline
 					(pts
 						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -348,6 +360,18 @@
 					(start 0 -3.048)
 					(mid -0.5058 -2.54)
 					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -403,6 +427,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4314,6 +4356,10 @@
 		(uuid "afe55f74-01ca-4321-82d9-4819bd1b202c")
 	)
 	(no_connect
+		(at 34.29 110.49)
+		(uuid "b2906c6e-ee91-48ac-aca2-d6a9b4a9855a")
+	)
+	(no_connect
 		(at 275.59 91.44)
 		(uuid "be85cfab-da9b-42c5-8b12-9a7a97fa604a")
 	)
@@ -4329,7 +4375,6 @@
 		(at 275.59 88.9)
 		(uuid "f9d99a42-42da-413c-8d73-9230c11aa18d")
 	)
-<<<<<<< HEAD
 	(wire
 		(pts
 			(xy 35.56 176.53) (xy 41.91 176.53)
@@ -4339,11 +4384,6 @@
 			(type default)
 		)
 		(uuid "00485b2a-986a-484a-ad38-0aac4e5cc3ad")
-=======
-	(no_connect
-		(at 275.59 91.44)
-		(uuid "fd19406e-193b-43be-a101-1342a806fba2")
->>>>>>> cbca62def5ce62dc51cfa88ad3fad5526d1347e6
 	)
 	(wire
 		(pts
@@ -5937,6 +5977,30 @@
 			)
 		)
 	)
+	(global_label "CC_SDA"
+		(shape input)
+		(at 34.29 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c8d523d-9931-411f-a0e6-b8b389756334")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 24.2291 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "D_N"
 		(shape input)
 		(at 190.5 54.61 0)
@@ -5958,30 +6022,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "CC_SCL"
-		(shape input)
-		(at 34.29 113.03 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "327e9904-38a4-42df-9324-86486b035603")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.2896 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -6249,30 +6289,6 @@
 			)
 		)
 	)
-	(global_label "CC_SDA"
-		(shape input)
-		(at 34.29 110.49 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "841e176b-95ce-4ded-91b3-82dc1979039b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.2291 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "D_N"
 		(shape input)
 		(at 275.59 93.98 0)
@@ -6478,6 +6494,30 @@
 		(uuid "f0d493d8-937f-4bd0-8d43-063a679fb2e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 172.72 120.5509 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CC_SCL"
+		(shape input)
+		(at 34.29 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f172039e-6d0b-4f30-901a-a07abde9373c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 24.2896 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7512,91 +7552,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Socket")
-		(at 39.37 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24d9a5c1-4187-453c-8b58-350441470ff2")
-		(property "Reference" "J3"
-			(at 40.64 109.2199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "JST-SH for Adafruit 4471"
-			(at 40.64 111.7599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
-			(at 39.37 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 39.37 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "0f40fdd8-6a65-4dd9-ab7d-41d647f1d5df")
-		)
-		(pin "2"
-			(uuid "d5f5c5a6-bac4-4eeb-9ee1-d8914fdaec3a")
-		)
-		(pin "1"
-			(uuid "6cdce135-b868-4c60-bd2f-489a04dd960f")
-		)
-		(instances
-			(project "USBC-2026"
-				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 140.97 64.77 0)
 		(unit 1)
@@ -7829,6 +7784,94 @@
 			(project "USBC-2026"
 				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
 					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 39.37 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31bb46f4-af7d-40c0-b86c-fb07f6d48ef1")
+		(property "Reference" "J3"
+			(at 40.64 110.4899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JST-SH for adafruit 4471"
+			(at 40.64 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
+			(at 39.37 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 39.37 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dd530af4-5901-46ff-ac26-91a0fa21f71e")
+		)
+		(pin "3"
+			(uuid "57553d24-badb-468b-b586-ada753af21e7")
+		)
+		(pin "4"
+			(uuid "067183d7-65a7-4942-b9f2-c32c10862fa9")
+		)
+		(pin "2"
+			(uuid "48e560a9-a0cb-468a-a614-21c9db875d4b")
+		)
+		(instances
+			(project "USBC-2026"
+				(path "/0c056c42-d02c-4bee-adc4-fcbb18375f33"
+					(reference "J3")
 					(unit 1)
 				)
 			)
