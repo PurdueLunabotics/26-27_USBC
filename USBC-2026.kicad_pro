@@ -723,7 +723,11 @@
         "uuid": "0c056c42-d02c-4bee-adc4-fcbb18375f33"
       }
     ],
+<<<<<<< HEAD
     "used_designators": "R1-11,#FLG1-9,#FLG12,IC1-3,J1-3,MOSFET1,#PWR1-47,#PWR51,L1-2,C1-31,P1,Q1-2,U1-2,H1-2",
+=======
+    "used_designators": "",
+>>>>>>> cbca62def5ce62dc51cfa88ad3fad5526d1347e6
     "variants": []
   },
   "sheets": [

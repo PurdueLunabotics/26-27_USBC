@@ -4329,6 +4329,7 @@
 		(at 275.59 88.9)
 		(uuid "f9d99a42-42da-413c-8d73-9230c11aa18d")
 	)
+<<<<<<< HEAD
 	(wire
 		(pts
 			(xy 35.56 176.53) (xy 41.91 176.53)
@@ -4338,6 +4339,11 @@
 			(type default)
 		)
 		(uuid "00485b2a-986a-484a-ad38-0aac4e5cc3ad")
+=======
+	(no_connect
+		(at 275.59 91.44)
+		(uuid "fd19406e-193b-43be-a101-1342a806fba2")
+>>>>>>> cbca62def5ce62dc51cfa88ad3fad5526d1347e6
 	)
 	(wire
 		(pts
