@@ -2859,12 +2859,6 @@
 		(path "/a7a355e4-bc16-4644-b3ad-9e7fdaa10560")
 		(sheetname "/")
 		(sheetfile "USBC-2026.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3038,16 +3032,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "46fcfec0-f5f8-48bf-a03e-38693820f37d")
-		)
-		(fp_line
-			(start -3.854001 -3.154)
-			(end -3.854001 16.554)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "6e7483b1-2d5b-4ae2-bed4-5c4d1672dedc")
 		)
 		(fp_line
 			(start -3.854001 -3.154)
