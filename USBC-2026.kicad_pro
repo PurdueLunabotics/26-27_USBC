@@ -52,15 +52,15 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_radius": 2.0,
+          "corner_smoothing": 1,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.1,
+          "min_clearance": 0.15,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 2,
@@ -773,7 +773,7 @@
         "uuid": "0c056c42-d02c-4bee-adc4-fcbb18375f33"
       }
     ],
-    "used_designators": "R1-11,#FLG1-9,#FLG12,IC1-3,J1-3,MOSFET1,#PWR1-47,#PWR51-54,L1-2,C1-31,P1,Q1-2,U1-2,H1-2,TP1-6",
+    "used_designators": "R1-11,#FLG1-9,#FLG12,IC1-3,J1-3,MOSFET1,#PWR1-47,#PWR51-55,L1-2,C1-32,P1,Q1-2,U1-2,H1-2,TP1-6",
     "variants": []
   },
   "sheets": [
